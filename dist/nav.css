@@ -226,6 +226,7 @@ footer .contact i {
 
 footer #mentions-legales {
   font-size: 12px;
+  padding-bottom: 1.5%;
 }
 
 @media screen and (max-width: 500px) {
