@@ -1,0 +1,231 @@
+//Breakpoint
+$large: 1400px;
+$medium: 1100px;
+$small: 500px;
+
+//Variable
+$black: black;
+$white: white;
+$footer: rgba(0, 14, 92, 0.733);
+$grey: rgb(136, 136, 136);
+$dore: rgb(216, 238, 22);
+
+body,
+header {
+  margin: 0;
+}
+
+.container-body {
+  width: 80%;
+  height: auto;
+  padding-top: 6%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Montserrat;
+
+  .container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin-bottom: 5%;
+
+    img {
+      width: 45%;
+      height: auto;
+      margin-right: 5%;
+    }
+
+    .contenu {
+      width: 80%;
+      height: 100%;
+
+      button {
+        margin-top: 5%;
+        width: 120px;
+        height: 40px;
+        border: none;
+      }
+      @media screen and (max-width: $medium) {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: $medium) {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+      }
+    }
+  }
+  @media screen and (max-width: $medium) {
+    width: 100%;
+    height: auto;
+
+    .right {
+      img {
+        order: -1;
+      }
+    }
+  }
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  box-shadow: 0px 10px 40px 0px $grey;
+  background-color: white;
+
+  @media screen and (min-width: $large) {
+    top: 0px;
+    height: 70px;
+    background-color: #173754;
+    height: 70px;
+    justify-content: flex-end;
+  }
+
+  input {
+    display: none;
+
+    @media screen and (min-width: $large) {
+      position: absolute;
+      display: block;
+      height: 30px;
+      width: 150px;
+      left: 50px;
+    }
+  }
+
+  a {
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: $black;
+    font-size: 10px;
+
+    @media screen and (min-width: $large) {
+      height: 14px;
+      width: 7%;
+      font-size: 14px;
+      padding: 0;
+      color: $white;
+
+      &:last-child {
+        margin-right: 50px;
+      }
+    }
+
+    img {
+      width: 12px;
+
+      @media screen and (min-width: $large) {
+        display: none;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: $footer;
+  font-family: Montserrat;
+
+  h2 {
+    text-align: center;
+    color: $dore;
+  }
+
+  h3 {
+    color: $white;
+  }
+
+  a {
+    text-decoration: none;
+    color: $dore;
+  }
+
+  .container-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: baseline;
+
+    .categrories {
+      margin-top: 5%;
+      margin-left: 3%;
+    }
+
+    @media screen and (max-width: $medium) {
+      flex-wrap: wrap;
+
+      .categrories {
+        height: auto;
+        margin-left: 0%;
+        width: 50%;
+      }
+
+      img {
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: $small) {
+      flex-direction: column;
+      text-align: center;
+
+      .categrories {
+        height: auto;
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0%;
+      }
+    }
+  }
+
+  .contact {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      font-size: 20px;
+      color: blue;
+    }
+
+    @media screen and (max-width: $small) {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 5%;
+    }
+  }
+
+  #mentions-legales {
+    font-size: 12px;
+
+    @media screen and (max-width: $small) {
+      padding-bottom: 15%;
+    }
+  }
+}
