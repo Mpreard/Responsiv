@@ -1,14 +1,5 @@
-//Breakpoint
-$large: 1400px;
-$medium: 1100px;
-$small: 500px;
-
-//Variable
-$black: black;
-$white: white;
-$footer: rgba(0, 14, 92, 0.733);
-$grey: rgb(136, 136, 136);
-$dore: rgb(216, 238, 22);
+@import "./color";
+@import "./variables";
 
 body,
 header {
